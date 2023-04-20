@@ -2,3 +2,9 @@
     font-family: pixel;
     src: url(./fonts/ka1.ttf);
 }
+
+.opening {
+    font-family: pixel;
+    font-size: 20pt;
+    /* need to learn font-size scaling h3h3 */
+}
