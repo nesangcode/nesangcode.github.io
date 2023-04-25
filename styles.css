@@ -9,7 +9,10 @@
     /* need to learn font-size scaling h3h3 */
 }
 
-
+body {
+    background-image: url(img/bg.jpg);
+    background-size: 100vw auto;
+}
 
 
 
