@@ -3,6 +3,8 @@
     src: url(./fonts/ka1.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@900&family=Secular+One&display=swap');
+
 .opening {
     font-family: pixel;
     font-size: 20pt;
