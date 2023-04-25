@@ -1,3 +1,18 @@
+@font-face {
+    font-family: pixel;
+    src: url(./fonts/ka1.ttf);
+}
+
+.opening {
+    font-family: pixel;
+    font-size: 20pt;
+    /* need to learn font-size scaling h3h3 */
+}
+
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,15 +32,4 @@ time, mark, audio, video {
    font-size: 100%;
    font: inherit;
    vertical-align: baseline;
-}
-
-@font-face {
-    font-family: pixel;
-    src: url(./fonts/ka1.ttf);
-}
-
-.opening {
-    font-family: pixel;
-    font-size: 20pt;
-    /* need to learn font-size scaling h3h3 */
 }
