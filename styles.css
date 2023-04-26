@@ -103,3 +103,27 @@ time, mark, audio, video {
    font: inherit;
    vertical-align: baseline;
 }
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+@media only screen and (orientation: portrait) {
+    .menu {
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .name {
+        width: 80vw;
+        display: inline;
+        text-align: center;
+    }
+}
