@@ -8,6 +8,11 @@
     src: url(./fonts/KidsDream.ttf);
 }
 
+@font-face {
+    font-family: "Poppins";
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@800&family=Roboto:wght@1000&family=Secular+One&display=swap');
 
 
