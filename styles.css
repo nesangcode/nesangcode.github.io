@@ -3,6 +3,7 @@
     src: url(./fonts/ka1.ttf);
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@900&family=Secular+One&display=swap');
 
 .opening {
@@ -16,6 +17,44 @@ body {
     background-size: 100vw auto;
 }
 
+.header {
+    display: flex;
+    background-color: rgb(32, 30, 30);
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    gap: 20px;
+    padding: 10px 50px;
+    margin: 0 200px;
+    border-radius: 20px;
+    max-width: 80vw;
+    animation: fadein 1.5s;
+}
+
+.name {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.home {
+    margin-left: auto;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0; 
+        height: 0px;
+    }
+    to {
+        opacity: 1;
+        height: 5.5vh;
+    }
+}
 
 
 html, body, div, span, applet, object, iframe,
