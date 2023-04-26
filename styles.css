@@ -10,10 +10,12 @@
 
 @font-face {
     font-family: "Poppins";
-    src: url(./fonts/Poppins-SemiBold.ttf);
+    src: url(./fonts/Poppins-Bold.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@800&family=Roboto:wght@1000&family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@800&family=Roboto:wght@900&family=Secular+One&display=swap');
+
 
 
 .opening {
@@ -34,7 +36,6 @@ body {
     justify-content: center;
     font-family: Roboto;
     color: white;
-    font-weight: 500;
     font-size: 120%;
     font-family: Poppins;
     gap: 30px;
@@ -71,7 +72,7 @@ a:visited {
 }
 
 .content {
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
     font-size: 50px;
     color: white;
     display: flex;
