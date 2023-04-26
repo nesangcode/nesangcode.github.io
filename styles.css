@@ -81,7 +81,7 @@ a:visited {
     align-items: center;
     justify-content: center;
     user-select: none;
-    animation: fade-in-right 1s ease-in-out;
+    animation: fade-in-right 2s ease-in-out;
 }
 
 @keyframes fadein {
