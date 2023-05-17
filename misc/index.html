@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <p>Lah?</p>
+        <button class="forbidden">Don't click me!</button>
+        <script>
+            let a = document.querySelector('.forbidden');
+            a.addEventListener('click', () => {
+                let b = document.createElement('iframe');
+                
+                let bodyPtr = document.querySelector('body');
+                b.src = "./?";
+                b.src += Math.random();
+                b.style.height = "100vh";
+                b.style.width = "100vw";
+                bodyPtr.insertBefore(b, a);
+                a.style.display = "none";
+            });
+        </script>
+    </body>
+</html>
