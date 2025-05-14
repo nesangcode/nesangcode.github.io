@@ -1,24 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Hello!</title>
-    </head>
-    <body>
-        <!-- <div class="opening">Hello World!</div> -->
-        <div class="header">
-            <div class="name"><a href=".">Kraken</a></div>
-            <div class="menu">
-                <div class="Home"><a href=".">Home</a></div>
-                <div class="contact"><a href=".">Contact</a></div>
-                <div class="about"><a href=".">About</a></div>
-            </div>
-        </div>
 
-        <div class="content">
-            Hello World!
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanes Angelo | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fdfdfd;
+      color: #1a2b4c;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: #072a4f;
+      color: #fff;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 999px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .socials {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .socials a {
+      background: #eee;
+      padding: 0.7rem;
+      border-radius: 50%;
+      text-decoration: none;
+      color: #072a4f;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      transition: background 0.3s;
+    }
+
+    .socials a:hover {
+      background: #072a4f;
+      color: white;
+    }
+
+    nav {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a.active {
+      color: #000;
+    }
+
+    #about {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    #about p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+      }
+      .socials {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <a href="#about" class="active">About Me</a>
+    <a href="#">Home</a>
+  </nav>
+
+  <header>
+    <h1>Hello!</h1>
+    <p>I’m Vanes Angelo, Full-Stack Developer.</p>
+    <a href="#about" class="btn">About Me</a>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/nesang" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/nesangcode" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:nesangcode@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I’m Vanes Angelo, a Computer Science student at Universitas Tanjungpura with a passion for building impactful backend systems and scalable cloud solutions. I thrive in solving real-world problems through code—whether it’s engineering robust APIs, automating workflows, or contributing to open-source projects.
+    </p>
+    <p>
+      With experience in Golang, PHP, and cloud technologies like GCP and Alibaba Cloud, I’ve built everything from thesis support systems to real-time ML data pipelines. I’m also actively involved in programming contests, both as a contestant and a problem setter, and have earned top placements in ICPC and Gemastik.
+    </p>
+    <p>
+      Beyond tech, I enjoy mentoring peers, organizing coding events, and continuously learning new tools to sharpen my craft. Let’s build something great together!
+    </p>
+  </section>
+</body>
+
 </html>
