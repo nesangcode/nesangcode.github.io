@@ -1,166 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanes Angelo | Portfolio</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: #fdfdfd;
-      color: #1a2b4c;
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      background-color: #072a4f;
-      color: #fff;
-      padding: 0.7rem 1.5rem;
-      border: none;
-      border-radius: 999px;
-      font-weight: bold;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .socials {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .socials a {
-      background: #eee;
-      padding: 0.7rem;
-      border-radius: 50%;
-      text-decoration: none;
-      color: #072a4f;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      transition: background 0.3s;
-    }
-
-    .socials a:hover {
-      background: #072a4f;
-      color: white;
-    }
-
-    nav {
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-
-    nav a.active {
-      color: #000;
-    }
-
-    #about {
-      padding: 4rem 2rem;
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-
-    #about h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
-    #about p {
-      font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 1rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
-      .btn {
-        font-size: 0.9rem;
-        padding: 0.6rem 1.2rem;
-      }
-      .socials {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nesangcode</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <nav>
-    <a href="#about" class="active">About Me</a>
-    <a href="#">Home</a>
-  </nav>
+    <header class="header">
+        <div class="logo">
+            <span class="dev-name">Vanes Angelo</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Vanes Angelo</span></h1>
+            <h2>Backend Developer & Cloud Solutions Engineer</h2>
+            <p class="hero-text">Building scalable systems, cloud solutions, and backend APIs with Go, PHP, and cloud-native technologies</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-container">
+                <!-- Replace with your actual photo -->
+                <div class="profile-placeholder">
+                    <img src="images/vanes_photo.jpg" alt="Vanes Angelo">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <h2><i class="fas fa-user-alt"></i> About Me</h2>
+            <div class="about-content-full">
+                <h3>My Story</h3>
+                <p>Hi, I'm <strong>Vanes Angelo</strong>.</p>
+<p>I'm a Computer Science student at Universitas Tanjungpura with a passion for building scalable systems, cloud solutions, and backend APIs. I specialize in Go, PHP, and cloud-native technologies, with hands-on experience in Google Cloud Platform and container orchestration tools like Docker and Kubernetes.</p>
+<p>My projects range from real-time data platforms using FastAPI and Redis, to academic systems digitizing campus operations with PHP, and backend automation with GitHub Actions. I've contributed to open-source projects such as <strong>Athens</strong> and <strong>Italia Developer API</strong>, and helped manage national-level competitive programming contests.</p>
+<p>I've also achieved top honors in programming competitions like ICPC and Gemastik, and earned cloud certifications (ACA & ACP) through Bangkit and Codepolitan.</p>
 
-  <header>
-    <h1>Hello!</h1>
-    <p>I’m Vanes Angelo, Full-Stack Developer.</p>
-    <a href="#about" class="btn">About Me</a>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/nesang" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/nesangcode" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="mailto:nesangcode@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    </div>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi! I’m Vanes Angelo, a Computer Science student at Universitas Tanjungpura with a passion for building impactful backend systems and scalable cloud solutions. I thrive in solving real-world problems through code—whether it’s engineering robust APIs, automating workflows, or contributing to open-source projects.
-    </p>
-    <p>
-      With experience in Golang, PHP, and cloud technologies like GCP and Alibaba Cloud, I’ve built everything from thesis support systems to real-time ML data pipelines. I’m also actively involved in programming contests, both as a contestant and a problem setter, and have earned top placements in ICPC and Gemastik.
-    </p>
-    <p>
-      Beyond tech, I enjoy mentoring peers, organizing coding events, and continuously learning new tools to sharpen my craft. Let’s build something great together!
-    </p>
-  </section>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-envelope"></i> Email:</span>
+                            <span class="info-value">nesangcode@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                            <span class="info-value">Pontianak, Indonesia</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-graduation-cap"></i> Degree:</span>
+                            <span class="info-value">B.S. in Computer Science</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-briefcase"></i> Experience:</span>
+                            <span class="info-value">Open Source Contributor</span>
+                        </div>
+                    </div>
+                    
+                    <a href="assets/resume.pdf" class="btn primary-btn" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <i class="fab fa-golang"></i>
+                        <h3>Go</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-php"></i>
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript/TypeScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database"></i>
+                        <h3>PostgreSQL & MySQL</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-docker"></i>
+                        <h3>Docker & Kubernetes</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-google"></i>
+                        <h3>GCP</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git & GitHub Actions</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience Section -->
+            <div class="experience-section">
+                <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Open-Source Software (OSS) Contributor</h4>
+                            <h5>Athens: Go, PostgreSQL</h5>
+                            <div class="timeline-date">March 2024 - Present</div>
+                            <ul class="responsibilities">
+                                <li>Executed seamless transition to upgraded AWS SDK version, resulting in a 25% reduction in repository dependencies.</li>
+                                <li>Refactored AWS S3 SDK unit tests for compatibility with the upgraded AWS SDK version, increasing code reliability by 30%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Italia Developer API</h4>
+                            <h5>Go, Gorm, Fiber</h5>
+                            <div class="timeline-date">2023 - Present</div>
+                            <ul class="responsibilities">
+                                <li>Included the detailed documentation of the OpenAPI specification for log message search, ensuring precise alignment with project standards and enabling seamless integration with external systems.</li>
+                                <li>Designed and improved the log endpoint unit tests by including 3+ unit tests and mock data.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Himpunan Mahasiswa Informatika (HMIF) UNTAN</h4>
+                            <div class="timeline-date">February 2025 – Present</div>
+                            <ul class="responsibilities">
+                                <li>Organized study groups across all cohorts and executed skill-enhancing events such as bootcamps and coding competitions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>UNTAN Programming Contest (UPC)</h4>
+                            <h5>Contest Manager, Universitas Tanjungpura</h5>
+                            <div class="timeline-date">2023 – Present</div>
+                            <ul class="responsibilities">
+                                <li>Prepared and tested 10+ problems, resulting in 0% clarification during contest.</li>
+                                <li>Deployed contest environment effectively, resulting in 0% downtime during contest.</li>
+                                <li>Identified and evaluated top 5 performing teams for Indonesia National Contest (INC) through rigorous competition based on performance in contest.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Programming Lab Assistant</h4>
+                            <h5>Universitas Tanjungpura</h5>
+                            <div class="timeline-date">August 2023 – November 2023</div>
+                            <ul class="responsibilities">
+                                <li>Developed 7+ hands-on programming practicums based on core data structure and algorithms.</li>
+                                <li>Enhanced student understanding of data structures and algorithms through hands-on coding sessions, resulting in a 20% increase in average exam scores.</li>
+                                <li>Increased programming contest participation rate by 60% among first-year students.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education Section -->
+            <div class="education-section">
+                <h3><i class="fas fa-graduation-cap"></i> Education & Certifications</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>UNIVERSITAS TANJUNGPURA</h4>
+                            <h5>Bachelor of Computer Science</h5>
+                            <div class="timeline-date">August 2022 – Present (Expected January 2026)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Bangkit Academy 2024: Cloud Computing Learning Path</h4>
+                            <div class="timeline-date">September 2024 – January 2025</div>
+                            <p>Developed a project called SoundMood that integrates Google Cloud services, such as Pub/Sub, Cloud SQL, and Cloud Run, to create a seamless connection between a mobile app and machine learning models.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Codepolitan Training and Certification Program</h4>
+                            <h5>Backend Development, Cloud Computing</h5>
+                            <div class="timeline-date">May 2024 – June 2024</div>
+                            <ul class="responsibilities">
+                                <li>Completed 10+ Alibaba Cloud Services courses</li>
+                                <li>Received ACP and ACA certification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3><i class="fas fa-award"></i> Awards & Achievements</h3>
+                
+                <div class="awards-container">
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="award-details">
+                            <h4>Top 50 – The 2024 ICPC Asia Jakarta Regional Contest</h4>
+                            <div class="award-date">December 2024</div>
+                        </div>
+                    </div>
+                    
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-medal"></i></div>
+                        <div class="award-details">
+                            <h4>Top 10 – Gemastik XVII Programming Division</h4>
+                            <div class="award-date">September 2024</div>
+                        </div>
+                    </div>
+                    
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="award-details">
+                            <h4>Top 50 – The 2023 ICPC Asia Jakarta Regional Contest</h4>
+                            <div class="award-date">December 2023</div>
+                        </div>
+                    </div>
+                    
+                    <div class="award-item">
+                        <div class="award-icon"><i class="fas fa-medal"></i></div>
+                        <div class="award-details">
+                            <h4>Best Team of Region 2 – Gemastik XVI Programming Division</h4>
+                            <div class="award-date">September 2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <h2><i class="fas fa-project-diagram"></i> My Projects</h2>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="cloud">Cloud Solutions</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+            
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="assets/soundmood.jpg" alt="SoundMood">
+                    </div>
+                    <div class="project-info">
+                        <h3>SoundMood</h3>
+                        <p>Real-time data platform connecting Android front-end to a machine learning model</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>GCP</span>
+                            <span>Pub/Sub</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-details">
+                            <h4><i class="fas fa-tasks"></i> Key Features</h4>
+                            <p>REST API with FastAPI, high-performance application architecture using Google Cloud Platform, scalable system reliability, efficient resource management</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="assets/spota.png" alt="SPOTA UNTAN">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistem Pendukung Outline Tugas Akhir (SPOTA) UNTAN</h3>
+                        <p>Digitized thesis consultation system for university students</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>Google Drive API</span>
+                        </div>
+                        <div class="project-details">
+                            <h4><i class="fas fa-tasks"></i> Key Features</h4>
+                            <p>Streamlined bureaucratic processes by digitizing thesis consultation system, integrated Google Drive API for reliable cloud-based document management</p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            
+            <div class="cv-contact-section">
+                <div class="cv-profile">
+                    <div class="cv-profile-image">
+                        <div class="profile-placeholder">
+                            <img src="images/vanes_photo.jpg" alt="Vanes Angelo">
+                        </div>
+                    </div>
+                    <div class="cv-name">
+                        <h3>Vanes Angelo</h3>
+                        <h4>Full Stack Developer</h4>
+                    </div>
+                </div>
+                
+                <div class="cv-details">
+                    <div class="cv-contact-row">
+                        <div class="cv-contact-item">
+                            <div class="cv-contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="cv-contact-info">
+                                <h4>Email</h4>
+                                <p>nesangcode@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cv-contact-item">
+                            <div class="cv-contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="cv-contact-info">
+                                <h4>Phone</h4>
+                                <p>+62-813-5153-6925</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-contact-row">
+                        <div class="cv-contact-item">
+                            <div class="cv-contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="cv-contact-info">
+                                <h4>Location</h4>
+                                <p>Pontianak, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="cv-contact-item">
+                            <div class="cv-contact-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="cv-contact-info">
+                                <h4>Education</h4>
+                                <p>Computer Science, Universitas Tanjungpura</p>
+                            </div>
+                        </div>
+                    </div>                        <div class="cv-social-links">
+                        <a href="https://linkedin.com/in/nesang" class="cv-social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/nesangcode" class="cv-social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    
+                    <div class="cv-download">
+                        <a href="assets/resume.pdf" class="btn primary-btn" download>
+                            <i class="fas fa-download"></i> Download CV/Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Vanes Angelo. All rights reserved.</p>
+    </footer>
+    
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active state in navigation
+                    document.querySelectorAll('.navbar a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Close mobile menu if open
+                    const navbar = document.querySelector('.navbar');
+                    if (navbar.classList.contains('active')) {
+                        navbar.classList.remove('active');
+                        const menuToggle = document.querySelector('.menu-toggle');
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+        
+        // Project filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Highlight active nav item based on scroll position
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section[id]');
+                const scrollPosition = window.scrollY + 100;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        document.querySelectorAll('.navbar a').forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + sectionId) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-
 </html>
